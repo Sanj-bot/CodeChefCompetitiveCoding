@@ -1,0 +1,33 @@
+Problem:Online Or Offline
+Problem Chef is confused whether to go out and eat at the restaurant or order food online.
+The online order costs � N rupees while the cost of eating at the restaurant is � M rupees.
+However, Chef has a discount coupon with which he can avail flat 10 % 10% off on his online order.
+Find the cheaper option for Chef to eat, i.e., whether to order food online or eat at the restaurant.
+Solution:
+#include <iostream>
+using namespace std;
+
+int main() {
+    float N,M,T;
+   
+    cin>>T;
+    for(int i=0;i<T;i++){
+       cin>>N>>M;
+       N=N-((N*10)/100);
+       
+      if(N<M)
+      {
+          cout<<"ONLINE"<<endl;
+      }
+      else if(N>M)
+      {
+          cout<<"DINING"<<endl;
+      }
+      else if(N=M)
+      {
+          cout<<"EITHER"<<endl;
+           
+      }
+    }
+	return 0;
+}
