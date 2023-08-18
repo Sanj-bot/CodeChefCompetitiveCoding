@@ -1,0 +1,43 @@
+
+#include<bits/stdc++.h>
+
+
+using namespace std;
+
+int main() 
+{
+    
+    
+       int T;
+       cin>>T;
+       for(int i=0;i<T;i++)
+       {
+           //Your program starts here
+           int a,b,c;
+           int countL,countR;
+           countL=0;
+           countR=0;
+           cin>>a>>b>>c;
+           if(a==0||b==0||c==0)
+           {
+               countL=1;
+           }
+           
+           if(a==1||b==1||c==1)
+           {
+               countR=1;
+           }
+           if(1==(countL==countR))
+           {
+               cout<<"1"<<endl;
+           }
+           else
+           {
+               cout<<"0"<<endl;
+           }
+       }
+       
+       
+    
+	return 0;
+}
